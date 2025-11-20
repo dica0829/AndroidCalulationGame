@@ -47,15 +47,11 @@ public class GameCurrentResult extends AppCompatActivity {
         questionList = intent.getStringArrayListExtra("questionList");
 
         tvResultText.setText("정답: " + currentQuestion);
-        tvAnswer.setText("니가 적은 답 : " + currentAnswerInt);
+        tvAnswer.setText("edt: " + currentAnswerInt);
 
         //정답 여부에 따른 색 변환 : 임시
         LinearLayout linearLayout = findViewById(R.id.linearLayout);
-        if (answerBool)
-            linearLayout.setBackgroundColor(Color.rgb(0,255,0));
-        else
-            linearLayout.setBackgroundColor(Color.rgb(255,0,0));
-
+        linearLayout.setBackgroundColor(answerBool ? Color.rgb(0x4C,0xAF,0x50) : Color.rgb(0xF4,0x43,0x36));
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

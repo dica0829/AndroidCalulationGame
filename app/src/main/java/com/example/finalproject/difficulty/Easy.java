@@ -17,10 +17,10 @@ public class Easy implements Difficulty {
                 questionText = num1 + " + " + num2 + " = ";
                 break;
             case 1:
-                num1 = (int)(Math.random()*89+10);
-                num2 = (int)(Math.random()*89+10);
-                result = num1 - num2;
-                questionText = num1 + " - " + num2 + " = ";
+                result = (int)(Math.random()*50+10);
+                num1 = (int)(Math.random()*50+10);
+                num2 = num1 + result;
+                questionText = num2 + " - " + num1 + " = ";
                 break;
             case 2:
                 num1 = (int)(Math.random()*89+10);

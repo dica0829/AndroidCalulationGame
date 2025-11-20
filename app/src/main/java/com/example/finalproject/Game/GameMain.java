@@ -30,8 +30,8 @@ public class GameMain extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 btnEasy.setBackgroundColor(Color.rgb(0,0,0));
-                btnNormal.setBackgroundColor(Color.rgb(76, 175, 80));
-                btnHard.setBackgroundColor(Color.rgb(76, 175, 80));
+                btnNormal.setBackgroundColor(Color.rgb(0x5C, 0x6B, 0xC0));
+                btnHard.setBackgroundColor(Color.rgb(0x5C, 0x6B, 0xC0));
                 setDiff = 1; // easy
             }
         });
@@ -39,8 +39,8 @@ public class GameMain extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 btnNormal.setBackgroundColor(Color.rgb(0,0,0));
-                btnEasy.setBackgroundColor(Color.rgb(76, 175, 80));
-                btnHard.setBackgroundColor(Color.rgb(76, 175, 80));
+                btnEasy.setBackgroundColor(Color.rgb(0x5C, 0x6B, 0xC0));
+                btnHard.setBackgroundColor(Color.rgb(0x5C, 0x6B, 0xC0));
                 setDiff = 2; // normal
             }
         });
@@ -48,8 +48,8 @@ public class GameMain extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 btnHard.setBackgroundColor(Color.rgb(0,0,0));
-                btnNormal.setBackgroundColor(Color.rgb(76, 175, 80));
-                btnEasy.setBackgroundColor(Color.rgb(76, 175, 80));
+                btnNormal.setBackgroundColor(Color.rgb(0x5C, 0x6B, 0xC0));
+                btnEasy.setBackgroundColor(Color.rgb(0x5C, 0x6B, 0xC0));
                 setDiff = 3; // hard
             }
         });

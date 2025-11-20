@@ -6,13 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:padding="24dp"
+    android:background="#F0F4F8"
     android:orientation="vertical">
 
     <Button
         android:id="@+id/btnSkip"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="테스트용 스킵"/>
+        android:layout_gravity="end"
+        android:background="#546E7A"
+        android:paddingHorizontal="16dp"
+        android:text="테스트용 스킵"
+        android:textColor="#FFFFFF"
+        android:textSize="14dp"
+        android:textStyle="bold"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -21,11 +28,10 @@
         android:gravity="center"
         android:padding="16dp"
         android:text="Test"
-        android:textSize="24sp"
-        android:textColor="#333333"
+        android:textSize="24dp"
+        android:textColor="#263238"
         android:textStyle="bold"
         android:lineSpacingExtra="8dp"
-        android:elevation="4dp"
         android:layout_marginBottom="24dp"/>
 
     <Button
@@ -33,9 +39,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="다음"
-        android:textSize="18sp"
+        android:textSize="18dp"
+        android:textStyle="bold"
         android:paddingVertical="12dp"
-        android:background="#4CAF50"
+        android:background="#5C6BC0"
         android:textColor="#FFFFFF"
         android:layout_gravity="bottom"/>
 

@@ -16,14 +16,14 @@ public class Normal implements Difficulty {
                 questionText = num1 + " + " + num2 + " = ";
                 break;
             case 1:
+                result = (int)(Math.random()*400+100);
                 num1 = (int)(Math.random()*900+100);
-                num2 = (int)(Math.random()*400+100);
-                result = num1 - num2;
-                questionText = num1 + " - " + num2 + " = ";
+                num2 = num1 + result;
+                questionText = num2 + " - " + num1 + " = ";
                 break;
             case 2:
                 num1 = (int)(Math.random()*40+10);
-                num2 = (int)(Math.random()*20+10);
+                num2 = (int)(Math.random()*15+1);
                 result = num1 * num2;
                 questionText = num1 + " x " + num2 + " = ";
                 break;

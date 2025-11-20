@@ -16,10 +16,10 @@ public class Hard implements Difficulty {
                 questionText = num1 + " + " + num2 + " = ";
                 break;
             case 1:
-                num1 = (int)(Math.random()*9000+1000);
-                num2 = (int)(Math.random()*9000+1000);
-                result = num1 - num2;
-                questionText = num1 + " - " + num2 + " = ";
+                result = (int)(Math.random()*5000+1000);
+                num1 = (int)(Math.random()*5000+100);
+                num2 = num1 + result;
+                questionText = num2 + " - " + num1 + " = ";
                 break;
             case 2:
                 num1 = (int)(Math.random()*40+10);

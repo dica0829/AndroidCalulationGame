@@ -74,7 +74,7 @@
                 String resultPrefix = isCorrect ? "✅ [정답] " : "❌ [오답] ";
                 tv.setText(String.format("문제 %d. %s \n\t %s: %d\n", i + 1, questionInfo, resultPrefix, questionAnswer));
 
-                tv.setTextColor(isCorrect ? Color.BLUE : Color.RED);
+                tv.setTextColor(isCorrect ? Color.rgb(0x4C,0xAF,0x50) : Color.rgb(0xF4,0x43,0x36));
 
 
                 tv.setPadding(0, 10, 0, 10);
