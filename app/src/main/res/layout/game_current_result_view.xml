@@ -48,7 +48,7 @@
             android:layout_marginBottom="32dp"
             android:text="105"
             android:textColor="#263238"
-            android:textSize="32dp"
+            android:textSize="36dp"
             android:textStyle="bold" />
 
         <Button

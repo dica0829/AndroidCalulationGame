@@ -17,6 +17,26 @@
         android:orientation="vertical"
         android:padding="32dp">
 
+        <ProgressBar
+            android:id="@+id/timerProgressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_marginBottom="16dp"
+            android:max="100"
+            android:progress="100"
+            android:progressTint="#FF5722" />
+
+        <TextView
+            android:id="@+id/tvTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="00:30"
+            android:textColor="#FF5722"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

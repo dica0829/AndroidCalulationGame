@@ -47,7 +47,8 @@ public class GameCurrentResult extends AppCompatActivity {
         questionList = intent.getStringArrayListExtra("questionList");
 
         tvResultText.setText(currentQuestion);
-        tvAnswer.setText(currentAnswerInt + "");
+        // -1(시간초과)면 시간 초과로 표시 아니면 그대로 숫자
+        tvAnswer.setText(currentAnswerInt == -1 ? "시간 초과" : currentAnswerInt + "");
         tvAnswer.setTextColor(answerBool ? Color.rgb(0x4C,0xAF,0x50) : Color.rgb(0xF4,0x43,0x36));
 
         //정답 여부에 따른 색 변환 : 임시
