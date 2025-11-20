@@ -55,7 +55,7 @@
             android:id="@+id/btnNext"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#5C6BC0"
+            android:background="#FFA726"
             android:paddingVertical="14dp"
             android:text="다음 문제"
             android:textColor="#FFFFFF"
