@@ -51,9 +51,9 @@ public class GameCurrentResult extends AppCompatActivity {
         tvAnswer.setText(currentAnswerInt == -1 ? "시간 초과" : currentAnswerInt + "");
         tvAnswer.setTextColor(answerBool ? Color.rgb(0x4C,0xAF,0x50) : Color.rgb(0xF4,0x43,0x36));
 
-        //정답 여부에 따른 색 변환 : 임시
-        //LinearLayout linearLayout = findViewById(R.id.linearLayout);
-        //linearLayout.setBackgroundColor(answerBool ? Color.rgb(0x4C,0xAF,0x50) : Color.rgb(0xF4,0x43,0x36));
+        // 마지막이면 버튼 text 변경
+        if (last) btnNext.setText("결과 확인하기");
+
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -65,7 +65,6 @@ public class GameCurrentResult extends AppCompatActivity {
                     int questionCount = intent.getIntExtra("questionCount", 0);
                     boolean[] boolArray = intent.getBooleanArrayExtra("boolArray");
                     ArrayList<Integer> answerList = intent.getIntegerArrayListExtra("answerList");
-
                     Intent intent = new Intent(GameCurrentResult.this, GameResult.class);
                     intent.putExtra("answerCount", answerCount); // 정답 개수
                     intent.putExtra("questionCount", questionCount); // 문제 개수
